@@ -114,7 +114,9 @@ for (let i = 0; i <= 5; i++) {
   for (let j = 0; j <= i; j++) {
     shape += "*";
   }
-  shape += "\n";
+  if (i != 5) {
+    shape += "\n";
+  }
 }
 
 console.log(shape);
@@ -123,12 +125,12 @@ console.log(shape);
 
 let a = Math.abs(270);
 let b = Math.abs(192);
-
 let R;
-while (a % b > 0) {
-  R = a % b;
-  a = b;
-  b = R;
+
+for ( ; a % b > 0 ; ) {
+    R = a % b;
+    a = b;
+    b = R;
 }
 
 console.log(b);
