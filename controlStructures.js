@@ -72,22 +72,22 @@ if (username.length > 6 && password.length >= 8) {
 let whileCounter = 0;
 
 while (whileCounter <= 20) {
-    console.log(whileCounter);
-    whileCounter++;
+  console.log(whileCounter);
+  whileCounter++;
 }
 
 // for loop that will display the numbers 20 - 0
 
-for(let i = 20 ; i >= 0 ; i--) {
-    console.log(i);
+for (let i = 20; i >= 0; i--) {
+  console.log(i);
 }
 
 // for loop that will display all even numbers between 1 and 20
 
-for (let i = 1 ; i <= 20 ; i++) {
-    if (i % 2 == 0) {
-        console.log(i);
-    }
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
 }
 
 //two variable startRange and endRange Assign each variable a number ...
@@ -127,10 +127,33 @@ let a = Math.abs(270);
 let b = Math.abs(192);
 let R;
 
-for ( ; a % b > 0 ; ) {
-    R = a % b;
-    a = b;
-    b = R;
+for (; a % b > 0; ) {
+  R = a % b;
+  a = b;
+  b = R;
 }
 
 console.log(b);
+
+// Extra - Turn string to camelCase
+
+let str = "my name is";
+let wodarr = str.split(" ");
+let camelCase = "";
+
+for (let i = 0; i < wodarr.length; i++) {
+  if (i == 0) {
+    camelCase += wodarr[i].toLowerCase();
+  } else {
+    let word = wodarr[i];
+    for (let j = 0; j < word.length; j++) {
+      if (j == 0) {
+        camelCase += word[j].toUpperCase();
+      } else {
+        camelCase += word[j].toLowerCase();
+      }
+    }
+  }
+}
+
+console.log(camelCase);

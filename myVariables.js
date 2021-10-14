@@ -1,6 +1,6 @@
 // 1
 
-let language = 'JavaScript';
+let language = "JavaScript";
 let score = 10;
 
 console.log(language);
@@ -11,14 +11,14 @@ console.log(score);
 let length = 50;
 let width = 20;
 
-console.log('The area of the rectangle is ' + length * width);
+console.log("The area of the rectangle is " + length * width);
 
 // 3
 
 let num1 = 5;
 let num2 = 2;
 
-console.log('The reminder is ' + num1 % num2);
+console.log("The reminder is " + (num1 % num2));
 
 // 4
 
